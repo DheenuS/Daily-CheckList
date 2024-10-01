@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily CheckList</title>
+    <link rel="icon" href="Assets/nolist-found.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="dark-mode">
+    <header>
+        <nav>
+            <p class="header-title">Daily CheckList</p>
+        </nav>
+    </header>
+    <main class="main-parent" id="main-parent">
+            <div class="form-parent">
+                <form action="" method="post" id="form">
+                    <div class="search-items">
+                        <input type="text" title="search" class="search-field" id="search-field"
+                            placeholder="Enter Something to add..." />
+                        <button type="submit" class="search-button" id="search-btn">
+                            <p>Save</p>
+                        </button>
+                    </div>
+                </form>
+                <ul class="lists" id="food-container">
+                </ul>
+                <div class="emptyList" id="nolist">
+                    <img src="Assets/nolist-found.png" alt="nolist" id="nolistImage">
+                    <p id="nolistText">List is Empty! Add your new Lists</p>
+                </div>
+            </div>
+    </main>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
